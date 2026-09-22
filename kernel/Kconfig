@@ -28,7 +28,7 @@ config KSU_HACK_ARM64_BRANCH_LINK
 	depends on ARM64 && KALLSYMS
 	depends on !KSU_TAMPER_SYSCALL_TABLE
 	default y if KSU = m
-	default n
+	default y
 	help
 	  Attempts to provide sucompat by scanning kernel text and overwriting caller's
 	  branch insn ('b' or 'bl') directly to our hooks, bypassing trampoline overhead
