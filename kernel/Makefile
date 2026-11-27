@@ -13,7 +13,7 @@ $(info -- KDIR: $(KDIR))
 $(info -- MDIR: $(MDIR))
 
 # compliant to last upstream kernel change as of 2a60b28
-CFLAGS_ksu.o += -DKSU_VERSION=32735
+CFLAGS_ksu.o += -DKSU_VERSION=32739
 
 KSU_PACKAGE_NAME := me.weishu.kernelsu
 KSU_EXPECTED_SIZE := 0x033b
